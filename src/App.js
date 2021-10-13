@@ -1,10 +1,5 @@
 import './App.css';
-import './noway.png'
 import video from './wave.mp4'
-import pic from './pictures/bek2022.png'
-
-
-
 
 
 
