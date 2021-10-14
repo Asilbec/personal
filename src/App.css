@@ -1,18 +1,21 @@
 body {
   overflow-x: hidden;
+  background: #000000;
 }
 
 .App {
-  height: 100vh;
-  background: rebeccapurple;
+  height: fit-content;
+  min-height: 100vh;
+  background: rgb(0, 0, 0);
   display: block;
+  overflow-x: hidden;
 }
 
 .entireBackground {
   height: 100vh;
   height: fit-content;
   width: 100vw;
-  background: rgb(12, 12, 12);
+  background: rgb(0, 0, 0);
   display: none;
 }
 
@@ -110,7 +113,7 @@ mark:hover {
 }
 
 #a1 {
-  display: none;
+  display: flex;
 }
 
 #a2 {
@@ -118,7 +121,7 @@ mark:hover {
 }
 
 #a3 {
-  display: flex;
+  display: none;
 }
 
 .prj {
@@ -180,7 +183,7 @@ mark:hover {
 
 @media only screen and (max-width: 800px) {
   .linkz {
-    font-size: 25vw;
+    font-size: 21vw;
   }
   .linkButtons {
     white-space: nowrap;
@@ -190,4 +193,29 @@ mark:hover {
   .about p {
     width: 87%;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff0066;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+
+#projectsxx {
+  display: grid;
+  grid-gap: 150px;
 }
