@@ -113,7 +113,7 @@ mark:hover {
 }
 
 #a1 {
-  display: flex;
+  display: none;
 }
 
 #a2 {
@@ -122,6 +122,10 @@ mark:hover {
 
 #a3 {
   display: none;
+}
+
+#a4 {
+  display: grid;
 }
 
 .prj {
@@ -193,6 +197,40 @@ mark:hover {
   .about p {
     width: 87%;
   }
+}
+
+.contactForm {
+  font-size: 2rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 330px;
+  height: 400px;
+  background-color: #f80466;
+  padding: 27px;
+  margin: auto;
+  display: grid;
+  grid-gap: 0px;
+  border-radius: 10px;
+}
+
+label {
+  width: 230px;
+  margin: auto;
+  color: white;
+  font-family: "Andale Mono", monospace;
+}
+
+input {
+  width: 230px;
+  height: 30px;
+  padding-left: 10px;
+  margin: auto;
+  border-radius: 5px;
+  border-color: #000000;
+  border-style: hidden;
 }
 
 /* width */

@@ -11,6 +11,7 @@ function App() {
     document.getElementById('a1').style.display = 'flex';
     document.getElementById('a2').style.display = 'none'
     document.getElementById('a3').style.display = 'none'
+    document.getElementById('a4').style.display = 'none'
 
 
   }
@@ -19,12 +20,24 @@ function App() {
     document.getElementById('a1').style.display = 'none';
     document.getElementById('a2').style.display = 'flex'
     document.getElementById('a3').style.display = 'none'
+    document.getElementById('a4').style.display = 'none'
+
   }
 
   function project() {
     document.getElementById('a1').style.display = 'none';
     document.getElementById('a2').style.display = 'none'
     document.getElementById('a3').style.display = 'flex'
+    document.getElementById('a4').style.display = 'none'
+
+  }
+
+  function contactMe() {
+    document.getElementById('a1').style.display = 'none';
+    document.getElementById('a2').style.display = 'none'
+    document.getElementById('a3').style.display = 'none'
+    document.getElementById('a4').style.display = 'grid'
+
   }
 
   return (
@@ -34,7 +47,7 @@ function App() {
           <div className="linkButtons">
             <button id="about" onClick={() => aboutMe()} className="linkz">{'\t'}<mark> About    </mark>    </button>
             <button id="Projects" onClick={() => project()} className="linkz">{'\t'}<mark> Projects </mark>  </button>
-            <button id="Contact" className="linkz">{'\t'}<mark> Contact  </mark>  </button>
+            <button id="Contact" onClick={() => contactMe()} className="linkz">{'\t'}<mark> Contact  </mark>  </button>
           </div>
         </div>
       </div>
@@ -101,11 +114,9 @@ function App() {
             </a>
             <h3>A react based game in which the user has to correct the right sequence to get the right answer</h3>
           </div>
-
-
           <div className="about">
             <h2><mark>Vsco</mark></h2>
-            <a href='https://bek2022.netlify.app/'>
+            <a href='https://asilbec.github.io/Vsco/'>
               <img alt='' src={pic4}></img>
             </a>
             <h3>Tried to compy Vsco</h3>
@@ -114,7 +125,19 @@ function App() {
 
         </div>
       </div>
-
+      <div id="a4" className="entireBackground">
+        <div className='contacttt'>
+          <button id='back' onClick={() => back()} >Back</button>
+          <div className="contactForm">
+            <label for='firstname'>First name :</label>
+            <input placeholder="Kanye..." autoFocus id="firstname"></input>
+            <label for='LastName'>Last name :</label>
+            <input placeholder="West..." id="firstname"></input>
+            <label for='email'>Email : </label>
+            <input type='email' placeholder=" kidcudi@gmail.com" id="email"></input>
+          </div>
+        </div>
+      </div>
     </div >
   );
 }
